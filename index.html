@@ -1,96 +1,635 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL VISION - UAE Business Circle | 90% OFF Launch Offer</title>
+    <meta name="description" content="Transform from stressed wealthy entrepreneur to peaceful, clear-minded leader. Exclusive meditation program for Dubai business owners. 90% launch discount.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: #000000;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+            padding: 2rem;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('../src/assets/hero-dubai-transformation.jpg') center/cover no-repeat;
+            opacity: 0.4;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+        }
+
+        .gold-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #D4AF37 100%);
+            color: #000000;
+            padding: 1rem 2.5rem;
+            font-size: 2rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            border-radius: 50px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.5);
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 10px 40px rgba(212, 175, 55, 0.5);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 15px 60px rgba(212, 175, 55, 0.7);
+            }
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+            color: #D4AF37;
+            font-weight: 300;
+            letter-spacing: 3px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 6rem 2rem;
+            position: relative;
+        }
+
+        .dark-section {
+            background: linear-gradient(180deg, #000000 0%, #0a0a0a 100%);
+        }
+
+        .gold-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2520 50%, #1a1a1a 100%);
+            border-top: 2px solid #D4AF37;
+            border-bottom: 2px solid #D4AF37;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h3 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #D4AF37;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: #e0e0e0;
+            line-height: 1.8;
+        }
+
+        /* Transformation Grid */
+        .transformation-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+
+        .transformation-card {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease;
+        }
+
+        .transformation-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .transformation-card img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .transformation-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+            background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 70%, transparent 100%);
+            text-align: center;
+        }
+
+        .before-label {
+            background: linear-gradient(to top, rgba(139, 0, 0, 0.95) 0%, rgba(139, 0, 0, 0.7) 70%, transparent 100%);
+        }
+
+        .after-label {
+            background: linear-gradient(to top, rgba(0, 100, 0, 0.95) 0%, rgba(0, 100, 0, 0.7) 70%, transparent 100%);
+        }
+
+        .transformation-label h4 {
+            font-size: 2rem;
+            font-weight: 900;
+            letter-spacing: 3px;
+            margin-bottom: 0.5rem;
+        }
+
+        .transformation-label p {
+            font-size: 1.1rem;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1410 50%, #0a0a0a 100%);
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .quote-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .quote-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid #D4AF37;
+            object-fit: cover;
+            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.4);
+        }
+
+        .quote-text {
+            flex: 1;
+            min-width: 300px;
+            text-align: left;
+        }
+
+        blockquote {
+            font-size: 1.8rem;
+            font-style: italic;
+            color: #D4AF37;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        blockquote::before {
+            content: '"';
+            font-size: 6rem;
+            position: absolute;
+            left: -1rem;
+            top: -2rem;
+            color: #D4AF37;
+            opacity: 0.3;
+        }
+
+        .quote-author {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-align: right;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2520 100%);
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #D4AF37;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+        }
+
+        .stat-number {
+            font-size: 4rem;
+            font-weight: 900;
+            color: #D4AF37;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+        }
+
+        /* Benefits List */
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .benefit-item {
+            background: rgba(212, 175, 55, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid #D4AF37;
+            transition: all 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            background: rgba(212, 175, 55, 0.2);
+            transform: translateX(10px);
+        }
+
+        .benefit-item h4 {
+            font-size: 1.5rem;
+            color: #D4AF37;
+            margin-bottom: 1rem;
+        }
+
+        /* Pricing Section */
+        .pricing-card {
+            max-width: 700px;
+            margin: 3rem auto;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2520 50%, #1a1a1a 100%);
+            padding: 4rem;
+            border-radius: 30px;
+            border: 3px solid #D4AF37;
+            box-shadow: 0 30px 90px rgba(212, 175, 55, 0.4);
+            text-align: center;
+        }
+
+        .original-price {
+            font-size: 2rem;
+            text-decoration: line-through;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .launch-price {
+            font-size: 5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .price-period {
+            font-size: 1.5rem;
+            color: #D4AF37;
+            margin-bottom: 2rem;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #D4AF37 100%);
+            color: #000000;
+            padding: 1.5rem 4rem;
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 15px 50px rgba(212, 175, 55, 0.5);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 1rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 70px rgba(212, 175, 55, 0.7);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            border: 3px solid #D4AF37;
+            color: #D4AF37;
+        }
+
+        /* Footer */
+        footer {
+            background: #000000;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 2px solid #D4AF37;
+        }
+
+        footer p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .transformation-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .quote-container {
+                flex-direction: column;
+            }
+
+            .quote-text {
+                text-align: center;
+            }
+
+            blockquote {
+                font-size: 1.3rem;
+            }
+
+            .gold-badge {
+                font-size: 1.3rem;
+                padding: 0.7rem 1.5rem;
+            }
+
+            .launch-price {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="gold-badge">90% OFF - LAUNCH OFFER</div>
+            <h1>EL VISION</h1>
+            <p class="subtitle">UAE BUSINESS CIRCLE</p>
+            <p style="font-size: 1.5rem; max-width: 800px; margin: 2rem auto; color: #ffffff;">Transform from stressed, overwhelmed entrepreneur to calm, clear-minded leader</p>
+            <a href="#pricing" class="cta-button">Claim Your Launch Discount</a>
+        </div>
+    </section>
+
+    <!-- The Issue Section -->
+    <section class="dark-section">
+        <div class="container">
+            <h2>THE ISSUE & TRANSFORMATION</h2>
+            <h3 style="text-align: center; color: #ffffff;">Why Dubai's Business Owners Need This</h3>
+            
+            <div style="max-width: 900px; margin: 3rem auto; text-align: center;">
+                <p>Running a business in Dubai means competing in one of the most ambitious and high-speed global hubs. This environment demands excellence, but that demand often comes with a significant psychological cost.</p>
+                <p>Recent statistics paint a clear picture: stress in the UAE remains consistently high at <strong style="color: #D4AF37;">89%</strong>, with a staggering <strong style="color: #D4AF37;">99% of residents</strong> reporting at least one symptom of burnout. For an entrepreneur, this isn't just a number—it's a daily reality of anxiety, fatigue, and a constant, draining feeling of being "reactive".</p>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">89%</div>
+                    <div class="stat-label">Stress Level in UAE</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Report Burnout Symptoms</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformation Gallery -->
+    <section class="gold-section">
+        <div class="container">
+            <h2>THE TRANSFORMATION</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 4rem; font-size: 1.4rem;">From stressed, reactive thinking to calm, active clarity. See the difference meditation makes for wealthy entrepreneurs.</p>
+            
+            <!-- Private Jet Transformation -->
+            <div class="transformation-grid">
+                <div class="transformation-card">
+                    <img src="../src/assets/before-stress-jet.jpg" alt="Stressed businessman in private jet">
+                    <div class="transformation-label before-label">
+                        <h4>BEFORE</h4>
+                        <p>Overwhelmed • Reactive • Stressed Despite Success</p>
+                    </div>
+                </div>
+                <div class="transformation-card">
+                    <img src="../src/assets/after-peace-jet.jpg" alt="Peaceful businessman meditating in private jet">
+                    <div class="transformation-label after-label">
+                        <h4>AFTER</h4>
+                        <p>Calm • Proactive • Mental Clarity & Inner Peace</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rolls Royce Transformation -->
+            <div class="transformation-grid" style="margin-top: 3rem;">
+                <div class="transformation-card">
+                    <img src="../src/assets/before-stress-rollsroyce.jpg" alt="Stressed businessman with Rolls Royce">
+                    <div class="transformation-label before-label">
+                        <h4>BEFORE</h4>
+                        <p>Anxiety • Financial Stress • Trapped in Passive Thinking</p>
+                    </div>
+                </div>
+                <div class="transformation-card">
+                    <img src="../src/assets/after-peace-rollsroyce.jpg" alt="Peaceful businessman meditating with Rolls Royce">
+                    <div class="transformation-label after-label">
+                        <h4>AFTER</h4>
+                        <p>Peace • Financial Wellness • Active Thinking & Joy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ray Dalio Quote -->
+    <section class="quote-section">
+        <div class="container">
+            <h2 style="margin-bottom: 4rem;">WISDOM FROM THE WORLD'S BEST</h2>
+            <div class="quote-container">
+                <img src="../src/assets/ray-dalio-portrait.jpg" alt="Ray Dalio" class="quote-image">
+                <div class="quote-text">
+                    <blockquote>
+                        Meditation more than anything in my life was the biggest ingredient of whatever success I've had.
+                    </blockquote>
+                    <p class="quote-author">— Ray Dalio, Founder of Bridgewater Associates</p>
+                    <p style="margin-top: 2rem; font-size: 1.1rem; color: #D4AF37;">One of the world's most successful investors credits meditation as his #1 success tool. What could it unlock for you?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get -->
+    <section class="dark-section">
+        <div class="container">
+            <h2>WHAT YOU GET</h2>
+            <h3 style="text-align: center; color: #ffffff;">Your Path to Clarity</h3>
+            
+            <div style="max-width: 900px; margin: 2rem auto;">
+                <p style="text-align: center;">The "EL VISION Business Circle" is a program designed to give you back control over your emotional state—your single greatest business asset.</p>
+            </div>
+
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <h4>✦ Proven Method Circle</h4>
+                    <p>Access to an exclusive circle and methodology engineered for founders.</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>✦ Direct Founder Access</h4>
+                    <p>Get direct guidance and accountability from our founder.</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>✦ Clarity Meditation Sessions</h4>
+                    <p>Intensive, private 20-minute guided sessions via phone or video call to instantly reduce stress and rebuild your focus.</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>✦ Relieve Stress & Gain Clarity</h4>
+                    <p>Achieve the mental clarity required to make better financial and strategic decisions.</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>✦ Master "End-State Energy"</h4>
+                    <p>Embody the emotional state of your desired outcome before it manifests, allowing you to see opportunities that were previously invisible.</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>✦ Positive Feedback Loop</h4>
+                    <p>Break the stress cycle. Emotional peace fuels financial wellness, and better financial wellness deepens your emotional peace.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <p style="font-size: 1.3rem; color: #D4AF37;">Our Mission: <a href="https://elvisiongroup.com" style="color: #FFD700; text-decoration: none; font-weight: 700;">elvisiongroup.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Backend Automation -->
+    <section class="gold-section">
+        <div class="container" style="text-align: center;">
+            <h2>BACKEND AUTOMATION SUPPORT</h2>
+            <div style="max-width: 900px; margin: 2rem auto;">
+                <p style="font-size: 1.3rem;">True peace of mind comes when your business runs on autopilot. If your greatest source of stress is manual operations, repetitive administrative tasks, or inefficient systems, our team is ready to help.</p>
+                <p style="font-size: 1.2rem; margin-top: 2rem;">Check our portfolio of AI automation systems and website design to see how we can free up your time:</p>
+                <a href="http://dev.elvisiongroup.com" class="cta-button secondary" style="margin-top: 2rem;">View Our Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="dark-section" id="pricing">
+        <div class="container">
+            <h2>YOUR INVESTMENT</h2>
+            <h3 style="text-align: center; color: #ffffff; margin-bottom: 1rem;">With 90% Launch Discount</h3>
+            
+            <div style="max-width: 800px; margin: 2rem auto; text-align: center;">
+                <p style="font-size: 1.3rem;">We want to build this foundational circle with the right visionaries. For a limited time, we are offering an unprecedented launch discount.</p>
+            </div>
+
+            <div class="pricing-card">
+                <p style="font-size: 1.3rem; color: #D4AF37; margin-bottom: 2rem; font-weight: 700;">EXCLUSIVE LAUNCH OFFER</p>
+                <div class="original-price">$2000 / 3 Months</div>
+                <div class="launch-price">$200</div>
+                <div class="price-period">/ 3 Months</div>
+                
+                <div style="background: rgba(212, 175, 55, 0.1); padding: 2rem; border-radius: 15px; margin: 2rem 0; border: 2px solid #D4AF37;">
+                    <p style="font-size: 1.4rem; font-weight: 700; color: #D4AF37; margin-bottom: 1rem;">🎁 SAVE $1800 TODAY</p>
+                    <p style="font-size: 1.1rem; color: #e0e0e0; margin: 0;">Limited spots available for founding members</p>
+                </div>
+
+                <a href="https://elvisiongroup.com" class="cta-button">Join The Circle Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="gold-section">
+        <div class="container" style="text-align: center;">
+            <h2 style="margin-bottom: 2rem;">READY TO TRANSFORM?</h2>
+            <p style="font-size: 1.5rem; max-width: 800px; margin: 0 auto 3rem;">Stop letting stress control your decisions. Join Dubai's elite business circle and master the mental clarity that separates good entrepreneurs from great ones.</p>
+            <a href="https://elvisiongroup.com" class="cta-button">Claim Your 90% Discount</a>
+            <a href="http://dev.elvisiongroup.com" class="cta-button secondary">View Automation Portfolio</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p style="font-size: 1.2rem; color: #D4AF37; margin-bottom: 1rem;">EL VISION GROUP</p>
+            <p>Transforming UAE Business Leaders Through Mental Clarity & Meditation</p>
+            <p style="margin-top: 1rem;">
+                <a href="https://elvisiongroup.com" style="color: #D4AF37; text-decoration: none; margin: 0 1rem;">elvisiongroup.com</a> | 
+                <a href="http://dev.elvisiongroup.com" style="color: #D4AF37; text-decoration: none; margin: 0 1rem;">dev.elvisiongroup.com</a>
+            </p>
+            <p style="margin-top: 2rem; font-size: 0.9rem;">© 2024 EL VISION GROUP. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
 </html>
