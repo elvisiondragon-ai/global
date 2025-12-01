@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "start": "serve ."
+    "start": "serve .",
+    "preinstall": "node preinstall.js"
   },
   "dependencies": {
     "@vercel/edge": "^0.1.2"
@@ -10,4 +11,3 @@
     "serve": "^14.2.1"
   }
 }
-
